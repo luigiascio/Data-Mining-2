@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divCMKWDPCYW7YTZRX"></div>
+        <div class="lime top_div" id="top_div4E41J6ALUWP2LAO"></div>
         
         <script>
-        var top_div = d3.select('#top_divCMKWDPCYW7YTZRX').classed('lime top_div', true);
+        var top_div = d3.select('#top_div4E41J6ALUWP2LAO').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Film", "Serie TV", "Shorts", "Speciale TV", "Video", "Videogame"], [0.0, 1.0, 0.0, 0.0, 0.0, 0.0]);
+            var pp = new lime.PredictProba(pp_svg, ["movie", "short", "tvEpisode", "tvMiniSeries", "tvMovie", "tvSeries", "tvShort", "tvSpecial", "video", "videoGame"], [0.0, 0.45, 0.4, 0.0, 0.05, 0.0, 0.05, 0.0, 0.05, 0.0]);
             
         
         var exp_div;
-            var exp = new lime.Explanation(["Film", "Serie TV", "Shorts", "Speciale TV", "Video", "Videogame"]);
+            var exp = new lime.Explanation(["movie", "short", "tvEpisode", "tvMiniSeries", "tvMovie", "tvSeries", "tvShort", "tvSpecial", "video", "videoGame"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["1.6094379124341005", -0.15256495994515276], ["1.4", -0.05365912211073183], ["1.0", -0.04878362084032785], ["0.6931471805599453", -0.03826741877985264], ["0.0", 0.03486946239503397], ["2.079441541679836", -0.030827428220309597], ["1.9459101490553128", -0.029155170894953366], ["1.9", 0.021509262398619108], ["2.0", 0.01149226760416392], ["1.7", -0.010691355171931993]], 1, exp_div);
+                exp.show([["runtimeMinutes", -0.07192596162725562], ["awardWins", 0.033946451074625274], ["numRegions", 0.03272531113253689], ["AwNmExWins", 0.023089314860717], ["castNumber", -0.01944361045355278], ["totalCredits", -0.015857612034825826], ["externalLinks", 0.007684119409447321], ["numVotes", -0.007649522674558677], ["startYear", -0.007215795811639401], ["rating=(5, 6]", 0.003363034491108524]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_tabular([["1.6094379124341005", "1.00", -0.15256495994515276], ["1.4", "0.00", -0.05365912211073183], ["1.0", "0.00", -0.04878362084032785], ["0.6931471805599453", "25.00", -0.03826741877985264], ["0.0", "1975.00", 0.03486946239503397], ["2.079441541679836", "0.69", -0.030827428220309597], ["1.9459101490553128", "0.00", -0.029155170894953366], ["1.9", "8.30", 0.021509262398619108], ["2.0", "1.95", 0.01149226760416392], ["1.7", "1.39", -0.010691355171931993]], 1, raw_div);
+            exp.show_raw_tabular([["runtimeMinutes", "24.00", -0.07192596162725562], ["awardWins", "0.00", 0.033946451074625274], ["numRegions", "1.00", 0.03272531113253689], ["AwNmExWins", "0.00", 0.023089314860717], ["castNumber", "1.10", -0.01944361045355278], ["totalCredits", "17.00", -0.015857612034825826], ["externalLinks", "0.00", 0.007684119409447321], ["numVotes", "2.08", -0.007649522674558677], ["startYear", "1972.00", -0.007215795811639401], ["rating=(5, 6]", "1.00", 0.003363034491108524]], 1, raw_div);
         
         </script>
         </body></html>
