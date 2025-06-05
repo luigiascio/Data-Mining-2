@@ -37089,14 +37089,22 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
+<<<<<<< HEAD
         <div class="lime top_div" id="top_divZTCMWAWLF78VPY6"></div>
         
         <script>
         var top_div = d3.select('#top_divZTCMWAWLF78VPY6').classed('lime top_div', true);
+=======
+        <div class="lime top_div" id="top_div4JE2CRSK65SCG4N"></div>
+        
+        <script>
+        var top_div = d3.select('#top_div4JE2CRSK65SCG4N').classed('lime top_div', true);
+>>>>>>> 4299d612be8f97aab47b1e937842aecabdf857fd
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
+<<<<<<< HEAD
             var pp = new lime.PredictProba(pp_svg, ["(0, 1]", "(1, 2]", "(2, 3]", "(3, 4]", "(4, 5]", "(5, 6]", "(6, 7]", "(7, 8]", "(8, 9]", "(9, 10]"], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0033333333333333335, 0.19333333333333333, 0.75, 0.05333333333333334, 0.0]);
             
         
@@ -37111,6 +37119,19 @@
                 
         var raw_div = top_div.append('div');
             exp.show_raw_tabular([["titleType=TV Series", "1.00", 0.03554729282759624], ["titleType=Movies", "0.00", -0.02046424467800322], ["numVotes", "4.16", 0.019533652333460126], ["numRegions", "1.00", -0.007417695994202989], ["awardWins", "0.00", 0.0050369709172565285], ["runtimeMinutes", "60.00", -0.005026405779780429], ["criticReviewsTotal", "0.00", -0.004729032705916423], ["titleType=Shorts", "0.00", -0.004305809945836765], ["userReviewsTotal", "1.39", -0.0030803676802050864], ["companiesNumber", "1.79", 0.0028801565492390076]], 7, raw_div);
+=======
+            var pp = new lime.PredictProba(pp_svg, ["Film", "Serie TV", "Shorts", "Speciale TV", "Video", "Videogame"], [0.0, 1.0, 0.0, 0.0, 0.0, 0.0]);
+            
+        
+        var exp_div;
+            var exp = new lime.Explanation(["Film", "Serie TV", "Shorts", "Speciale TV", "Video", "Videogame"]);
+        
+                exp_div = top_div.append('div').classed('lime explanation', true);
+                exp.show([["numRegions", -0.14040856840124227], ["AwNmExWins", -0.05213132454846643], ["awardWins", -0.04594300380973257], ["runtimeMinutes", -0.040061125378136636], ["externalLinks", -0.026921258071455935], ["startYear", 0.023867474312494193], ["averageRating", 0.021126238954119594], ["userReviewsTotal", -0.013486780731931575], ["writerCredits", 0.011892822565626572], ["rating=(8, 9]", 0.005902877547142065]], 1, exp_div);
+                
+        var raw_div = top_div.append('div');
+            exp.show_raw_tabular([["numRegions", "1.00", -0.14040856840124227], ["AwNmExWins", "0.00", -0.05213132454846643], ["awardWins", "0.00", -0.04594300380973257], ["runtimeMinutes", "25.00", -0.040061125378136636], ["externalLinks", "0.00", -0.026921258071455935], ["startYear", "1975.00", 0.023867474312494193], ["averageRating", "8.30", 0.021126238954119594], ["userReviewsTotal", "1.39", -0.013486780731931575], ["writerCredits", "1.95", 0.011892822565626572], ["rating=(8, 9]", "1.00", 0.005902877547142065]], 1, raw_div);
+>>>>>>> 4299d612be8f97aab47b1e937842aecabdf857fd
         
         </script>
         </body></html>
