@@ -37089,25 +37089,28 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div4E41J6ALUWP2LAO"></div>
+        <div class="lime top_div" id="top_divZTCMWAWLF78VPY6"></div>
         
         <script>
-        var top_div = d3.select('#top_div4E41J6ALUWP2LAO').classed('lime top_div', true);
+        var top_div = d3.select('#top_divZTCMWAWLF78VPY6').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["movie", "short", "tvEpisode", "tvMiniSeries", "tvMovie", "tvSeries", "tvShort", "tvSpecial", "video", "videoGame"], [0.0, 0.45, 0.4, 0.0, 0.05, 0.0, 0.05, 0.0, 0.05, 0.0]);
+            var pp = new lime.PredictProba(pp_svg, ["(0, 1]", "(1, 2]", "(2, 3]", "(3, 4]", "(4, 5]", "(5, 6]", "(6, 7]", "(7, 8]", "(8, 9]", "(9, 10]"], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0033333333333333335, 0.19333333333333333, 0.75, 0.05333333333333334, 0.0]);
             
         
         var exp_div;
-            var exp = new lime.Explanation(["movie", "short", "tvEpisode", "tvMiniSeries", "tvMovie", "tvSeries", "tvShort", "tvSpecial", "video", "videoGame"]);
+            var exp = new lime.Explanation(["(0, 1]", "(1, 2]", "(2, 3]", "(3, 4]", "(4, 5]", "(5, 6]", "(6, 7]", "(7, 8]", "(8, 9]", "(9, 10]"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["runtimeMinutes", -0.07192596162725562], ["awardWins", 0.033946451074625274], ["numRegions", 0.03272531113253689], ["AwNmExWins", 0.023089314860717], ["castNumber", -0.01944361045355278], ["totalCredits", -0.015857612034825826], ["externalLinks", 0.007684119409447321], ["numVotes", -0.007649522674558677], ["startYear", -0.007215795811639401], ["rating=(5, 6]", 0.003363034491108524]], 1, exp_div);
+                exp.show([["titleType=TV Series", 0.03554729282759624], ["titleType=Movies", -0.02046424467800322], ["numVotes", 0.019533652333460126], ["numRegions", -0.007417695994202989], ["awardWins", 0.0050369709172565285], ["runtimeMinutes", -0.005026405779780429], ["criticReviewsTotal", -0.004729032705916423], ["titleType=Shorts", -0.004305809945836765], ["userReviewsTotal", -0.0030803676802050864], ["companiesNumber", 0.0028801565492390076]], 7, exp_div);
+                
+                exp_div = top_div.append('div').classed('lime explanation', true);
+                exp.show([["startYear", -0.0167264302319434], ["titleType=TV Series", -0.012231879856090838], ["numRegions", 0.008175858079010275], ["titleType=Movies", 0.006765828512497818], ["numVotes", -0.006726429391602865], ["AwNmExWins", 0.005144378491267803], ["criticReviewsTotal", 0.0045208854867198525], ["castNumber", -0.003772546456215855], ["companiesNumber", 0.003261711719900197], ["writerCredits", 0.001737040839587828]], 6, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_tabular([["runtimeMinutes", "24.00", -0.07192596162725562], ["awardWins", "0.00", 0.033946451074625274], ["numRegions", "1.00", 0.03272531113253689], ["AwNmExWins", "0.00", 0.023089314860717], ["castNumber", "1.10", -0.01944361045355278], ["totalCredits", "17.00", -0.015857612034825826], ["externalLinks", "0.00", 0.007684119409447321], ["numVotes", "2.08", -0.007649522674558677], ["startYear", "1972.00", -0.007215795811639401], ["rating=(5, 6]", "1.00", 0.003363034491108524]], 1, raw_div);
+            exp.show_raw_tabular([["titleType=TV Series", "1.00", 0.03554729282759624], ["titleType=Movies", "0.00", -0.02046424467800322], ["numVotes", "4.16", 0.019533652333460126], ["numRegions", "1.00", -0.007417695994202989], ["awardWins", "0.00", 0.0050369709172565285], ["runtimeMinutes", "60.00", -0.005026405779780429], ["criticReviewsTotal", "0.00", -0.004729032705916423], ["titleType=Shorts", "0.00", -0.004305809945836765], ["userReviewsTotal", "1.39", -0.0030803676802050864], ["companiesNumber", "1.79", 0.0028801565492390076]], 7, raw_div);
         
         </script>
         </body></html>
