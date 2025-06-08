@@ -37089,25 +37089,28 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div15ZSVZBZBA71AQZ"></div>
+        <div class="lime top_div" id="top_divPI9W28JYU3V57M7"></div>
         
         <script>
-        var top_div = d3.select('#top_div15ZSVZBZBA71AQZ').classed('lime top_div', true);
+        var top_div = d3.select('#top_divPI9W28JYU3V57M7').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Movies", "Shorts", "TV Series", "TV Special", "Video", "Videogame"], [0.03333333333333333, 0.38333333333333336, 0.5433333333333333, 0.0, 0.01, 0.03]);
+            var pp = new lime.PredictProba(pp_svg, ["(0, 1]", "(1, 2]", "(2, 3]", "(3, 4]", "(4, 5]", "(5, 6]", "(6, 7]", "(7, 8]", "(8, 9]", "(9, 10]"], [0.0, 0.0025077277759137577, 0.0027934450765268316, 0.022159139093420273, 0.07060268021539691, 0.17995597600793342, 0.3556423685771192, 0.25135624945340446, 0.09615614299607296, 0.018826270804212286]);
             
         
         var exp_div;
-            var exp = new lime.Explanation(["Movies", "Shorts", "TV Series", "TV Special", "Video", "Videogame"]);
+            var exp = new lime.Explanation(["(0, 1]", "(1, 2]", "(2, 3]", "(3, 4]", "(4, 5]", "(5, 6]", "(6, 7]", "(7, 8]", "(8, 9]", "(9, 10]"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["runtimeMinutes", -0.06505405173600881], ["numRegions", 0.030727778684430572], ["awardWins", 0.02831741340427371], ["AwNmExWins", 0.022689915376933868], ["castNumber", -0.022300745426431467], ["directorsCredits", 0.021265503402631947], ["totalCredits", -0.01477883879758667], ["externalLinks", 0.0126370884159169], ["startYear", -0.009671656838518857], ["rating=(5, 6]", -0.004265221132235965]], 1, exp_div);
+                exp.show([["titleType=TV Series", -0.01587158681647447], ["numRegions", 0.008940401705415367], ["titleType=Movies", 0.005827997993020474], ["titleType=Shorts", 0.005391312153860759], ["numVotes", -0.004105763755671501], ["totalCredits", 0.004048057487971184], ["companiesNumber", 0.0032163715873796124], ["criticReviewsTotal", 0.0023480663095102406], ["totalImages", -0.0018641500596747775], ["castNumber", -0.0016606365516316274]], 6, exp_div);
+                
+                exp_div = top_div.append('div').classed('lime explanation', true);
+                exp.show([["titleType=TV Series", -0.015422421464414233], ["titleType=Movies", 0.010005009114260109], ["numVotes", -0.004989045494838814], ["awardWins", -0.0038204940305823446], ["castNumber", 0.0038166908625137923], ["numRegions", 0.00298618586696196], ["totalCredits", -0.0019373470612194554], ["criticReviewsTotal", 0.0015576100647435261], ["runtimeMinutes", 0.0013733901177272988], ["titleType=Shorts", 0.0009408492454047802]], 4, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_tabular([["runtimeMinutes", "6.00", -0.06505405173600881], ["numRegions", "1.00", 0.030727778684430572], ["awardWins", "0.00", 0.02831741340427371], ["AwNmExWins", "0.00", 0.022689915376933868], ["castNumber", "1.10", -0.022300745426431467], ["directorsCredits", "0.69", 0.021265503402631947], ["totalCredits", "12.00", -0.01477883879758667], ["externalLinks", "0.00", 0.0126370884159169], ["startYear", "1963.00", -0.009671656838518857], ["rating=(5, 6]", "1.00", -0.004265221132235965]], 1, raw_div);
+            exp.show_raw_tabular([["titleType=TV Series", "0.00", -0.01587158681647447], ["numRegions", "1.00", 0.008940401705415367], ["titleType=Movies", "0.00", 0.005827997993020474], ["titleType=Shorts", "1.00", 0.005391312153860759], ["numVotes", "2.71", -0.004105763755671501], ["totalCredits", "9.00", 0.004048057487971184], ["companiesNumber", "0.69", 0.0032163715873796124], ["criticReviewsTotal", "0.00", 0.0023480663095102406], ["totalImages", "0.00", -0.0018641500596747775], ["castNumber", "0.00", -0.0016606365516316274]], 6, raw_div);
         
         </script>
         </body></html>
