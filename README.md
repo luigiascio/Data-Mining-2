@@ -65,7 +65,7 @@ The project is structured as follows:
 
 ## 🛠 Technologies Used
 - **Language**: Python 🐍  
-- **Main libraries**: "Pandas", 'NumPy', 'matplotlib', 'seaborn' 'Scikit-learn', 'Pytorch', 'PyOD', 'imblearn', 'XGBoost', 'SHAP', 'LORE', 'tslearn', 'TSFresh, 'BORF', 'SAX'     
+- **Main libraries**: `Pandas`, `NumPy`, `matplotlib`, `seaborn`, `Scikit-learn`, `Pytorch`, `PyOD`, `imblearn`, `XGBoost`, `SHAP`, `LORE`, `tslearn`, `TSFresh`, `BORF`, `SAX`     
 - **Notebook**: Jupyter  
 
 ## 📖 License
