@@ -78,4 +78,4 @@ You can see the full details in the `LICENSE` file.
 
 ---
 
-Additionally, the complete report is available in the file `Imbd_report.pdf`.
+Additionally, the complete report is available in the file `Project_Albani_Ascione_Maitino.pdf`.
